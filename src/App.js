@@ -1,18 +1,18 @@
 import "./App.css";
 import Pao from "./Pao.jpeg";
-import { useState } from "react";
+
 
 
 export default function App() {
 
   function BotonFlip({texto, texto2, className}) {
     return (
-    <a 
+    <button 
     className={`btn-flip ${className || ""}`} 
     data-front={texto} 
     data-back={texto2}
     rel="noopener noreferrer">
-    </a>
+    </button>
     );
   }
   return(
